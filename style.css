@@ -225,7 +225,7 @@ padding-bottom: 5px;
 /*HEADER*/
 .header-homepage {
 	
-	background: url(../photoshop/images/kiki_home_page.jpg) 0 0 no-repeat;
+	background: url(/images/kiki_home_page.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
 	border-bottom: 2px;
@@ -242,7 +242,7 @@ padding-bottom: 5px;
 
 .header-portfolio {
 	
-	background: url(../photoshop/images/services-header.jpg) 0 0 no-repeat;
+	background: url(/images/services-header.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
 
