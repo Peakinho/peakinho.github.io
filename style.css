@@ -252,7 +252,7 @@ padding-bottom: 5px;
 
 .header-about {
 	
-	background: url(../photoshop/images/about-header.jpg) 0 0 no-repeat;
+	background: url(/images/about-header.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
 
@@ -262,7 +262,7 @@ padding-bottom: 5px;
 
 .header-gallery {
 	
-	background: url(../photoshop/images/gallery-header1.jpg) 0 0 no-repeat;
+	background: url(/images/gallery-header1.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
 
@@ -271,7 +271,7 @@ padding-bottom: 5px;
 
 .header-contact {
 
-		background: url(../photoshop/images/contact-header1.jpg) 0 0 no-repeat;
+		background: url(/images/contact-header1.jpg) 0 0 no-repeat;
 	    height: 300px;
 	    background-size: 100%;
 
