@@ -1,4 +1,3 @@
-/*TYPOGRAPHY*/
 body {
 	color: #2e2e2e;
 	font: 16px/24px "Helvetica Neue", Arial, Sans-serif;
@@ -45,24 +44,23 @@ a{
 	text-decoration: none;
 }
     
-    a:hover {
-    	text-decoration: underline;
-    }
+
 
 
 /* GENERAL LAYOUT RULES */
 .container {
-	width: 1200px;
+	width: auto;
     margin: 0 auto;
 }
 
 .container-home {
 	background-color: #fff;
-	width: 1000px;
+	width: auto;
 	overflow: hidden;
 	position: center;
 	margin: 0 auto;
-}
+
+  }
 
 .container-contact {
 	background-color: #fff;
@@ -107,91 +105,19 @@ a{
 	border-style: double;
 }
 
-.container-home h3 {
-	color: #800020;
-	margin:10px 20px;
-	border-bottom: 5px;
-	border-left: 0px;
-	border-top: 0px;
-	border-right: 0px;
-	border-style: double;
-}
-          
-.contact-home { 
-   color: white; 
-   font: 10px;
-   letter-spacing: -1px;
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(50.2, 0, 12.5, 0.7);
-   position: absolute;
-   margin-top: 70px;
-   margin-left: 500px;
-   
-}
-
-.contact-home p {
-	margin: 0em;
-	font-size: 22px;
-	font-style: oblique;
-}
 
 
-.testimonial {
-	font-size: 18px;
-	float: right;
-	position: absolute;
-	width: 400px;
-	margin-top: 300px;
-	margin-left: 100px; 
-	color: black;
-}
 
-.testbar {
-	float right: 
-
-}
-
-
-.home-dog {
-	width: 300px;
-	float: right;
-
-}
-
-.home-logo {
-	width: 300px;
-	float: right;
-	margin-top: 100px;
-	height: 300px;
-}
-
-.half-home {
-	width: 400px
-}
-
-.home-left-pic {
-	width: 200px;
-	float: left;
-}
-
-.home-left-pic2 {
-	width: 200px;
-	float: right;
-}
-
-.row {
-	overflow: hidden;
-}
-
-.column-half {
-	margin: 0 12px 24px 12px;
-	width: 400px;
-	/*float: left;*/
-}
 .container-center {
 	margin: 0 auto 96px auto;
-	width: 600px;
+	width: auto;
 	text-align: center;
+}
+
+@media (max-width: 700px) {
+	.container-center {
+		margin: 10px;
+	}
 }
 
  .iconDetails {
@@ -224,20 +150,39 @@ padding-bottom: 5px;
 
 /*HEADER*/
 .header-homepage {
-	
-	background: url(/images/kiki_home_page.jpg) 0 0 no-repeat;
+    background: url(./images/kiki_home_page.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
-	border-bottom: 2px;
-	border-top: 0px;
-	border-left: 0px;
-	border-right: 0px;
-	border-style: double;
-	color: #800020;
+    margin-bottom: 96px;
+}
+
+@media (max-width: 1000px) {
+	.header-homepage {
+		height: 200px;
+		margin-bottom: 46px;
+	}
+}
+
+@media (max-width: 850px) {
+	.header-homepage {
+		height: 160px;
+		margin-bottom: 32px;
+	}
+}
+
+@media (max-width: 700px) {
+	.header-homepage {
+		height: 150px;
+		margin-bottom: 12px;
+	}
+}
 
 
-	
-	margin-bottom: 24px;
+@media (max-width: 500px) {
+	.header-homepage {
+		height: 124px;
+		margin-bottom: 12px;
+	}
 }
 
 .header-portfolio {
@@ -282,33 +227,232 @@ padding-bottom: 5px;
 	float: left;
 }
 
-nav {
-	float: right;
-	position: absolute;
-	left: 275px;
+/* portfolio home */
+
+.container-home h3 {
+	color: #800020;
+	margin:10px 20px;
+	border-bottom: 5px;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-style: double;
+	width: auto;
 }
 
-    nav ul {
-    	list-style-type: none;
-    	margin: 0;
+@media (max-width: 700px) {
+	.container-home { 
+		margin: 0px 6px;
+	}
+}
+          
+.contact-home { 
+   color: white; 
+   font: 10px;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(50.2, 0, 12.5, 0.7);
+   position: absolute;
+   margin-top: 70px;
+  
+   
+}
+
+.contact-home p {
+	margin: 0em;
+	font-size: 22px;
+	font-style: oblique;
+}
+
+
+.testimonial {
+	font-size: 18px;
+	float: right;
+	position: absolute;
+	width: 400px;
+	margin-top: 300px; 
+	color: black;
+}
+
+.testbar {
+	float right: 
+
+}
+
+
+.home-dog {
+	width: 300px;
+	float: right;
+
+}
+
+.home-logo {
+	width: 300px;
+	float: right;
+	margin-top: 100px;
+	height: 300px;
+}
+
+.half-home {
+	width: 400px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.home-left-pic {
+	width: 200px;
+	float: left;
+}
+
+.home-left-pic2 {
+	width: 200px;
+	float: right;
+}
+
+.row {
+	overflow: hidden;
+    display: flex;
+    margin: 72px;
+}
+
+.column-half {
+	margin: 0 12px 24px 12px;
+	width: 400px;
+	background-color: #333538;
+	margin: auto;
+	/*float: left;*/}
+
+ @media (max-width: 700px) {
+ 	.row { 
+ 		display: block;
+ 	}
+    
+    .container {
+    	width: auto;
     }
 
-        nav ul li {
-        	display: inline;
-        	margin-left: 24px;
-        }
+    .container-home {
+    	width: auto;
+    }
 
-            nav ul li a {
-            	color: white; 
-            	text-transform: uppercase;
-            	font-weight: bold;
-            	font-size: 14px;
-            }
+    .contact-home {
+    	float: auto;
+    	margin: 10px;
+
+    }
+
+    .testimonial {
+    	float: left;
+    	margin-left: 10px;
+    	margin-top: 300px;
+    }
+
+}
+
+/* Nav Menu */
+
+.top-container {
+	width: auto;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+    width: 100%;
+   
+    
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}  
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+   
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 0;
+    display: block;
+}
+
+
+
+@media (max-width: 700px) {
+  .dropdown:hover .dropdown-content {
+    opacity: 1;
+}
+  .horizontal-nav {
+    opacity: 0;
+   
+  }
+
+  .navbar  {
+  	width: 70px;
+    height: 50px;
+    padding-top: 0px;
+    margin-top: -50px;
+  }
+  
+}
+
+
+/* End Nav Menu */
 
 .top-container {
 	overflow: hidden;
 	padding: 48px 0 0 0;
 }
+
 
 .header-hr {
 	background-color: rgba(255, 255, 255, .1);
@@ -321,21 +465,17 @@ nav {
 	display: flex;
 	align-items: center;
 
-}
+} 
+
 
 .header-contents {
 	text-align: center;
 	color: white;
-	padding: 0 200px;
-
+	padding: 0 100px;
 
 }
 
-	.header-contents p {
-		margin-bottom: 24px;
-	}
 
-   
 
 
 /* BUTTONS 
@@ -343,14 +483,12 @@ nav {
 	display: inline-block;
 	height: 48px;
 	width: 200px;
-
 	border: 1px solid #f2ae5d;
 	color: #f2ae5d;
 	text-transform: uppercase;
 	font-weight: bold;
 	padding-top: 10px;
 }
-
 	.btn:hover {
 		text-decoration: none;
 		background-color: #f2ae5d;
@@ -371,20 +509,6 @@ footer {
 		margin-bottom: 12px !important;
 	}
 
-form input[type="email"] {
-	border: none;
-	height: 48px;
-	width: 300px;
-	padding: 0 12px;
-}
-
-form input[type="submit"] {
-	background-color: transparent;
-	height: 48px;
-	width: 150px;
-	padding: 0 12px;
-	margin-left: 24px;
-}
 
 .social {
 	list-style-type: none;
@@ -401,16 +525,28 @@ form input[type="submit"] {
 	text-align: center;
 }
 
+ @media screen and (max-width: 700px) {
+ 	.row-foot {
+ 		display: block;
+ 	}
+
+ 	.container {
+ 		width: auto;
+ 	}
+ }
+	
+
 
 /* SIDEBAR */
 
 
-.row {
+.row-foot {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     margin: 72px;
 
 }
+
 
 .slidebar {
     flex: 1;
@@ -498,5 +634,3 @@ h1 {
   font-weight: 300;
   text-align: center;
 }
-
-
