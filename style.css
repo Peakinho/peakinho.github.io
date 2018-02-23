@@ -178,7 +178,7 @@ padding-bottom: 5px;
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 479px) {
 	.header-homepage {
 		height: 124px;
 		margin-bottom: 12px;
@@ -254,6 +254,7 @@ padding-bottom: 5px;
    background: rgba(50.2, 0, 12.5, 0.7);
    position: absolute;
    margin-top: 70px;
+   float: left;
   
    
 }
@@ -267,7 +268,7 @@ padding-bottom: 5px;
 
 .testimonial {
 	font-size: 18px;
-	float: right;
+	float: left;
 	position: absolute;
 	width: 400px;
 	margin-top: 300px; 
