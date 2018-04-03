@@ -37,6 +37,7 @@ h4 {
 
 p {
 	margin-bottom: 24px;
+
 }
 
 a{
@@ -56,7 +57,7 @@ a{
 .container-home {
 	background-color: #fff;
 	width: auto;
-	overflow: hidden;
+	overflow: visible;
 	position: center;
 	margin: 0 auto;
 
@@ -187,8 +188,8 @@ padding-bottom: 5px;
 
 @media (max-width: 400px) {
 	.header-homepage {
-		height: 90px;
-		margin-bottom: 12px;
+		height: 60px;
+		margin-bottom: 5px;
 	}
 }
 
@@ -248,10 +249,55 @@ padding-bottom: 5px;
 	width: auto;
 }
 
+
 @media (max-width: 700px) {
 	.container-home { 
 		margin: 0px 6px;
 	}
+}
+
+@media (max-width: 400px) {
+
+
+
+	.container-home h3 {
+		font-size: 16px;
+		
+	}
+	.home-gallery {
+		padding-top: 5px;
+		float: left;
+		width: 200px;
+	}
+
+	
+	.container-home p {
+		font-size: 10px;
+		overflow: visible;
+		margin-bottom: 12px;
+		width: 100%;
+		
+	}
+
+	.home-greeting {
+		width: 200px;
+		height: auto;
+		float: center;
+
+	}
+
+    .half-home {
+    	display: block;
+    }
+    .home-left-pic {
+    	padding-right: 5px;
+    }
+    .home-left-pic2 {
+    	padding-right: 5px;
+    }
+
+
+
 }
           
 .contact-home { 
@@ -260,7 +306,8 @@ padding-bottom: 5px;
    letter-spacing: -1px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(50.2, 0, 12.5, 0.7);
-   position: absolute;
+   opacity: 0.5;
+   position: relative;
    margin-top: 70px;
    float: left;
   
@@ -273,34 +320,103 @@ padding-bottom: 5px;
 	font-style: oblique;
 }
 
+@media (max-width: 400px) {
 
-.testimonial {
-	font-size: 18px;
-	float: left;
-	position: absolute;
-	width: 400px;
-	margin-top: 300px; 
-	color: black;
-}
+        .contact-home {
+        	width: 200px;
+        	padding-top: 5px;
+        }
 
-.testbar {
-	float right: 
-
+		.contact-home p {
+		font-size: 16px;
+		
+	}
+	    .contact-home h2 {
+	    	font-size: 16px;
+	    }
 }
 
 
 .home-dog {
-	width: 300px;
-	float: right;
+	width: auto;
+	float: left;
+	overflow: visible;
+	position: absolute;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	opacity: 1;
+}
+
+
+.home-dog2 {
+	width: auto;
+	float: left;
+	overflow: visible;
+	position: absolute;
+	margin-bottom: 10px;
+	margin-top: 500px;
 
 }
 
-.home-logo {
-	width: 300px;
-	float: right;
-	margin-top: 100px;
-	height: 300px;
+.home-dog2-mobile {
+	width: auto;
+	float: left;
+	overflow: visible;
+	position: absolute;
+	margin-bottom: 10px;
+	margin-top: 500px;
+	opacity: 0;
+
 }
+
+
+.home-dog-mobile {
+    width: auto;
+	float: left;
+	overflow: visible;
+	position: absolute;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	opacity: 0;
+
+}
+
+@media (max-width: 400px) {
+	.home-dog {
+		opacity: 0;
+	}
+	.home-dog-mobile {
+		opacity: 1;
+	}
+
+	.home-dog2 {
+		opacity: 0;
+	}
+	.home-dog2-mobile {
+		opacity: 1;
+		margin-top: 200px;
+		
+	}
+}
+
+
+.testimonial {
+	font-size: 18px;
+	float: left;
+	overflow: visible;
+	width: auto;
+	margin-top: 10px;
+	position: relative; 
+	color: black;
+	margin-top: 180px;
+	
+
+}
+
+.testbar {
+	float right: 
+}
+
 
 .half-home {
 	width: 400px;
@@ -319,10 +435,11 @@ padding-bottom: 5px;
 	float: right;
 }
 
+
+
 .row {
-	overflow: hidden;
     display: flex;
-    margin: 72px;
+    margin: 24px;
 }
 
 .column-half {
@@ -348,16 +465,35 @@ padding-bottom: 5px;
     .contact-home {
     	float: auto;
     	margin: 10px;
+    	display: block;
 
     }
 
     .testimonial {
+    	width: auto;
     	float: left;
     	margin-left: 10px;
-    	margin-top: 300px;
+    	margin-top: 180px;
     }
-
 }
+ @media (max-width: 400px) {
+
+ 	.row {
+ 		display: block;
+ 	}
+ 	.testimonial {
+ 		margin-top: 0px;
+ 		padding: 5px;
+ 		width: 200px;
+ 	}
+
+
+
+ }
+
+ 	  
+ 	
+
 
 /* Nav Menu */
 
@@ -440,10 +576,7 @@ padding-bottom: 5px;
   .dropdown:hover .dropdown-content {
     opacity: 1;
 }
-  .horizontal-nav {
-    opacity: 0;
-   
-  }
+
 
   .navbar  {
   	width: 70px;
@@ -458,8 +591,8 @@ padding-bottom: 5px;
 	.navbar {
 		width: 50px;
 		height: 30px;
-    margin-top: -50px;
-    font-size: 10px;
+        margin-top: -50px;
+        font-size: 8px;
     
 	}
 }		
