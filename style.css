@@ -151,7 +151,7 @@ padding-bottom: 5px;
 
 /*HEADER*/
 .header-homepage {
-    background: url(./images/kiki_home_page.jpg) 0 0 no-repeat;
+    background: url(http://peakinho.github.io/images/kiki_home_page.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
     margin-bottom: 96px;
@@ -278,23 +278,6 @@ padding-bottom: 5px;
 		width: 100%;
 		
 	}
-
-	.home-greeting {
-		width: 200px;
-		height: auto;
-		float: center;
-
-	}
-
-    .half-home {
-    	display: block;
-    }
-    .home-left-pic {
-    	padding-right: 5px;
-    }
-    .home-left-pic2 {
-    	padding-right: 5px;
-    }
 
 
 
@@ -486,6 +469,28 @@ padding-bottom: 5px;
  		padding: 5px;
  		width: 200px;
  	}
+
+
+    .half-home {
+    	width: auto;
+    }
+
+    .home-left-pic {
+    	position: relative;
+    	
+    }
+
+    .home-left-pic2 {
+    	position: relative;
+    	}
+
+   .home-greeting {
+		width: 200px;
+		height: auto;
+		float: center;
+
+	}
+
 
 
 
