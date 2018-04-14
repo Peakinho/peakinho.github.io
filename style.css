@@ -89,11 +89,7 @@ a{
 
 .container-about p {
 	display: block;
-	width: 400px;
-	float: right;
-	margin-right: 100px;
-	margin-bottom: 10px;
-	margin-top: 5px;
+	padding: 0 10px;
 }
 
 .container-about h3 {
@@ -136,14 +132,12 @@ padding-bottom: 5px;
 }
 
 .about-pics {
-    margin-left: 30px;
-    margin-right: auto;
+    margin: 5px;
     float: left;
     display: block;
 	border: 2px;
 	border-style: double;
 	color: #800020;
-	width: 675px;
 	background: #d3d3d3;
 
 }
@@ -203,16 +197,89 @@ padding-bottom: 5px;
     margin-bottom: 96px;
 	
 }
+@media (max-width: 1000px) {
+	.header-portfolio {
+		height: 200px;
+		margin-bottom: 46px;
+	}
+}
+
+@media (max-width: 850px) {
+	.header-portfolio {
+		height: 160px;
+		margin-bottom: 32px;
+	}
+}
+
+@media (max-width: 700px) {
+	.header-portfolio {
+		height: 150px;
+		margin-bottom: 12px;
+	}
+}
+
+
+@media (max-width: 479px) {
+	.header-portfolio {
+		height: 124px;
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 400px) {
+	.header-portfolio {
+		height: 60px;
+		margin-bottom: 5px;
+	}
+}
+
 
 .header-about {
 	
-	background: url(/images/about-header.jpg) 0 0 no-repeat;
+	background: url(http://peakinho.github.io/images/about-header.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
 
 	margin-bottom: 96px;
 	
-	}		
+	}	
+
+@media (max-width: 1000px) {
+	.header-about {
+		height: 200px;
+		margin-bottom: 46px;
+	}
+ }
+
+@media (max-width: 850px) {
+	.header-about {
+		height: 160px;
+		margin-bottom: 32px;
+	}
+}
+
+@media (max-width: 700px) {
+	.header-about {
+		height: 150px;
+		margin-bottom: 12px;
+	}
+}
+
+
+@media (max-width: 479px) {
+	.header-about {
+		height: 124px;
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 400px) {
+	.header-about {
+		height: 60px;
+		margin-bottom: 5px;
+	}
+}
+	
 
 .header-gallery {
 	
@@ -223,6 +290,43 @@ padding-bottom: 5px;
 	margin-bottom: 96px;
 }
 
+@media (max-width: 1000px) {
+	.header-gallery {
+		height: 200px;
+		margin-bottom: 46px;
+	}
+ }
+
+@media (max-width: 850px) {
+	.header-gallery {
+		height: 160px;
+		margin-bottom: 32px;
+	}
+}
+
+@media (max-width: 700px) {
+	.header-gallery {
+		height: 150px;
+		margin-bottom: 12px;
+	}
+}
+
+
+@media (max-width: 479px) {
+	.header-gallery {
+		height: 124px;
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 400px) {
+	.header-gallery {
+		height: 60px;
+		margin-bottom: 5px;
+	}
+}
+
+
 .header-contact {
 
 		background: url(/images/contact-header.jpg) 0 0 no-repeat;
@@ -231,6 +335,42 @@ padding-bottom: 5px;
 
 	    margin-bottom: 48px;
 }
+
+@media (max-width: 1000px) {
+	.header-contact {
+		height: 200px;
+		margin-bottom: 46px;
+	}
+ }
+
+@media (max-width: 850px) {
+	.header-contact {
+		height: 160px;
+		margin-bottom: 32px;
+	}
+}
+
+@media (max-width: 700px) {
+	.header-contact {
+		height: 150px;
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 479px) {
+	.header-contact {
+		height: 124px;
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 400px) {
+	.header-contact {
+		height: 60px;
+		margin-bottom: 5px;
+	}
+}
+
 
 .logo {
 	float: left;
@@ -430,6 +570,13 @@ padding-bottom: 5px;
 	width: 400px;
 	background-color: #333538;
 	margin: auto;
+	padding: 10px; }
+
+@media (max-width: 500px) {
+	.column-half {
+      width: auto;
+	}
+}
 	/*float: left;*/}
 
  @media (max-width: 700px) {
@@ -632,6 +779,18 @@ padding-bottom: 5px;
 
 }
 
+@media (max-width: 1000px){
+	.header-contents p {
+		opacity: 0;
+	}
+}
+
+@media (max-width: 550px) {
+	.header-contents h1 {
+		margin: 0px;
+	}
+}
+
 
 
 
@@ -790,4 +949,21 @@ h1 {
   font-size: 30px;
   font-weight: 300;
   text-align: center;
+}
+
+/* Media queries for about page */
+
+@media (max-width: 700px) {
+	.container-about {
+		width: auto;
+		padding: 0 10px;
+		margin: 0 10px;
+	}
+
+	.container-about p {
+		margin-left: 10px;
+		padding: 0 10px;
+		overflow: visible;
+		font: blue;
+	}
 }
