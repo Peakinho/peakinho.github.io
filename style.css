@@ -969,7 +969,11 @@ h1 {
 @media (max-width: 450px) {
 	.container-about {
 		width: 350px;
-		font: blue;
+		
+	}
+
+	.mobile-about {
+		width: 350px;
 	}
 
 	.about-pics {
