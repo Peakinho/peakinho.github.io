@@ -569,7 +569,6 @@ padding-bottom: 5px;
 	margin: 0 12px 24px 12px;
 	width: 400px;
 	background-color: #333538;
-	margin: auto;
 	padding: 10px; }
 
 @media (max-width: 500px) {
@@ -845,7 +844,6 @@ footer {
  	.row-foot {
  		display: block;
  	}
-
  	.container {
  		width: auto;
  	}
@@ -964,6 +962,17 @@ h1 {
 		margin-left: 10px;
 		padding: 0 10px;
 		overflow: visible;
+		
+	}
+}
+
+@media (max-width: 450px) {
+	.container-about {
+		width: 350px;
 		font: blue;
+	}
+
+	.about-pics {
+		position: center;
 	}
 }
