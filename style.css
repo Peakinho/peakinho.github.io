@@ -190,7 +190,7 @@ padding-bottom: 5px;
 
 .header-portfolio {
 	
-	background: url(/images/services-header.jpg) 0 0 no-repeat;
+	background: url(http://peakinho.github.io/images/services-header.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
 
@@ -283,7 +283,7 @@ padding-bottom: 5px;
 
 .header-gallery {
 	
-	background: url(/images/gallery-header1.jpg) 0 0 no-repeat;
+	background: url(http://peakinho.github.io/images/gallery-header1.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
 
@@ -329,7 +329,7 @@ padding-bottom: 5px;
 
 .header-contact {
 
-		background: url(/images/contact-header.jpg) 0 0 no-repeat;
+		background: url(http://peakinho.github.io/images/contact-header.jpg) 0 0 no-repeat;
 	    height: 300px;
 	    background-size: 100%;
 
@@ -782,11 +782,16 @@ padding-bottom: 5px;
 	.header-contents p {
 		opacity: 0;
 	}
+	.header-contents h1 {
+		margin: 0px;
+	}
+
 }
 
 @media (max-width: 550px) {
 	.header-contents h1 {
 		margin: 0px;
+		margin-top: -40px;
 	}
 }
 
@@ -840,6 +845,12 @@ footer {
 	text-align: center;
 }
 
+  .row-services {
+	display: flex;
+ 	margin: 24px;
+  }
+
+
  @media screen and (max-width: 700px) {
  	.row-foot {
  		display: block;
@@ -848,7 +859,8 @@ footer {
  		width: auto;
  	}
  }
-	
+
+
 
 
 /* SIDEBAR */
@@ -977,6 +989,70 @@ h1 {
 	}
 
 	.about-pics {
-		position: center;
+		margin-top: 0 auto;
+	}
+}
+
+/* Media queries for services page */
+
+
+.sidebar-services {
+	min-width: 170px
+}
+
+.services-mobile {
+	opacity: 0;
+}
+
+.services-tablet {
+	opacity: 0;
+	position: absolute;
+}
+
+
+@media (max-width: 1000px) {
+     .services-pics {
+     	opacity: 0;
+     	position: absolute;
+     	display: none;
+     }
+     .services-tablet {
+     	opacity: 1;
+     	position: relative;
+     }
+}
+
+@media (max-width: 700px) {
+	.services-mobile {
+		opacity: 1;
+		position: relative;
+	}
+
+	.services-tablet {
+		opacity: 0;
+		display: none;
+		position: absolute;
+	}
+
+	.services-pics{
+		opacity: 0;
+		position: absolute;
+		width: 200px;
+	}
+
+	.main-content {
+		min-width: 400px;
+		margin-left: 10px;
+	}
+
+	.row-services {
+		display: block;
+		margin: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.main-content {
+		margin-left: 0px; 
 	}
 }
