@@ -883,8 +883,9 @@ footer {
     flex: 9;
     margin-left: 60px;
     background: #ddd;
-    width: 600px;
+    padding: 10px;
 }
+
 
 ul {
   margin: 1em 0;
@@ -1041,7 +1042,6 @@ h1 {
 	}
 
 	.main-content {
-		min-width: 400px;
 		margin-left: 10px;
 	}
 
