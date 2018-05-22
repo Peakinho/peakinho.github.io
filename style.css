@@ -1003,10 +1003,12 @@ h1 {
 
 .services-mobile {
 	opacity: 0;
+	display: none;
 }
 
 .services-tablet {
 	opacity: 0;
+	display: none;
 	position: absolute;
 }
 
@@ -1056,3 +1058,5 @@ h1 {
 		margin-left: 0px; 
 	}
 }
+
+/* media quieres for services-deshedding */
