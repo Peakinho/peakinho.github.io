@@ -65,8 +65,9 @@ a{
 
 .container-contact {
 	background-color: #fff;
-	width: 1000px;
+	width: auto;
 	margin: 0 auto;
+	padding: 20px;
 
 }
 
@@ -145,7 +146,7 @@ padding-bottom: 5px;
 
 /*HEADER*/
 .header-homepage {
-    background: url(http://peakinho.github.io/images/kiki_home_page.jpg) 0 0 no-repeat;
+    background: url(images/kiki_home_page.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
     margin-bottom: 96px;
@@ -190,7 +191,7 @@ padding-bottom: 5px;
 
 .header-portfolio {
 	
-	background: url(http://peakinho.github.io/images/services-header.jpg) 0 0 no-repeat;
+	background: url(images/services-header.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
 
@@ -236,7 +237,7 @@ padding-bottom: 5px;
 
 .header-about {
 	
-	background: url(http://peakinho.github.io/images/about-header.jpg) 0 0 no-repeat;
+	background: url(images/about-header.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
 
@@ -283,7 +284,7 @@ padding-bottom: 5px;
 
 .header-gallery {
 	
-	background: url(http://peakinho.github.io/images/gallery-header1.jpg) 0 0 no-repeat;
+	background: url(images/gallery-header1.jpg) 0 0 no-repeat;
 	height: 300px;
 	background-size: 100%;
 
@@ -329,7 +330,7 @@ padding-bottom: 5px;
 
 .header-contact {
 
-		background: url(http://peakinho.github.io/images/contact-header.jpg) 0 0 no-repeat;
+		background: url(images/contact-header.jpg) 0 0 no-repeat;
 	    height: 300px;
 	    background-size: 100%;
 
@@ -681,7 +682,6 @@ padding-bottom: 5px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
     background-color: inherit;
     font: inherit;
     margin: 0;
@@ -854,11 +854,13 @@ footer {
  @media screen and (max-width: 700px) {
  	.row-foot {
  		display: block;
+ 		margin: 24px;
  	}
  	.container {
  		width: auto;
  	}
  }
+
 
 
 
@@ -916,7 +918,7 @@ body {
 }
 
 .gallery {
-  width: 640px;
+ 
   margin: 0 auto;
   padding: 5px;
   background: #fff;
@@ -962,6 +964,8 @@ h1 {
   text-align: center;
 }
 
+
+
 /* Media queries for about page */
 
 @media (max-width: 700px) {
@@ -996,9 +1000,13 @@ h1 {
 
 /* Media queries for services page */
 
+.current {
+    background-color: #333;
+    color: #fff;
+}
 
 .sidebar-services {
-	min-width: 170px
+	min-width: 170px;
 }
 
 .services-mobile {
@@ -1021,6 +1029,7 @@ h1 {
      }
      .services-tablet {
      	opacity: 1;
+     	display: block;
      	position: relative;
      }
 }
@@ -1028,6 +1037,7 @@ h1 {
 @media (max-width: 700px) {
 	.services-mobile {
 		opacity: 1;
+		display: block;
 		position: relative;
 	}
 
@@ -1059,4 +1069,48 @@ h1 {
 	}
 }
 
-/* media quieres for services-deshedding */
+/* media quieres for contact */
+
+.row-contact {
+	display: flex;
+}
+
+.column-half-contact-left {
+	margin: 0 12px 24px 12px;
+	width: 400px;
+	padding: 10px 50px;
+	 }
+
+.column-half-contact-right {
+	margin: 0 12px 24px 12px;
+	width: 400px;
+	background-color: #333538;
+	padding: 10px 50px;
+	 }
+
+
+@media (max-width: 1120px) {
+
+	.row-contact {
+		display: block;
+	}
+
+	.findUs {
+		display: none;
+	}
+
+	.column-half-contact {
+		width: auto;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.column-half-contact-right {
+		width: ;
+		padding: 10px 20px;
+	}
+	.column-half-contact-right h4 {
+		font-size: 10px;
+	}
+}
