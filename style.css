@@ -711,6 +711,7 @@ padding-bottom: 5px;
     float: none;
     color: black;
     padding: 12px 16px;
+    margin-left: 10px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -1103,9 +1104,9 @@ h1 {
 
 .column-half-contact-left {
 	margin: 0 12px 24px 12px;
-	width: 400px;
 
 	 }
+
 
 .column-half-contact-right {
 	margin: 0 12px 24px 12px;
@@ -1129,7 +1130,6 @@ h1 {
 
 	.column-half-contact-right {
 		width: 500px;
-}
 }
 
 @media (max-width: 600px) {
