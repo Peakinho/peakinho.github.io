@@ -431,7 +431,6 @@ padding-bottom: 5px;
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(50.2, 0, 12.5, 0.7);
    opacity: 0.5;
-   position: relative;
    margin-top: 70px;
    float: left;
   
@@ -499,7 +498,6 @@ padding-bottom: 5px;
 	float: left;
 	overflow: visible;
 	position: absolute;
-	margin-bottom: 10px;
 	margin-top: 20px;
 	opacity: 0;
 
