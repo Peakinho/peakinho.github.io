@@ -677,6 +677,10 @@ padding-bottom: 5px;
     overflow: hidden;
 }
 
+.dropbtn {
+	opacity: 0;
+}
+
 .dropdown .dropbtn {
     font-size: 16px;    
     border: none;
@@ -688,7 +692,7 @@ padding-bottom: 5px;
     margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover {
     background-color: red;
 }
 
@@ -729,6 +733,10 @@ padding-bottom: 5px;
     opacity: 1;
 }
 
+
+  .dropbtn {
+  	opacity: 1;
+  }
 
   .navbar  {
   	width: 70px;
@@ -1096,14 +1104,15 @@ h1 {
 .column-half-contact-left {
 	margin: 0 12px 24px 12px;
 	width: 400px;
-	padding: 10px 50px;
+
 	 }
 
 .column-half-contact-right {
 	margin: 0 12px 24px 12px;
-	width: 400px;
+	width: 600px;
 	background-color: #333538;
-	padding: 10px 50px;
+	padding-top: 10px;
+
 	 }
 
 
@@ -1111,15 +1120,16 @@ h1 {
 
 	.row-contact {
 		display: block;
+		width: 500px;
 	}
 
 	.findUs {
 		display: none;
 	}
 
-	.column-half-contact {
-		width: auto;
-	}
+	.column-half-contact-right {
+		width: 500px;
+}
 }
 
 @media (max-width: 600px) {
@@ -1130,7 +1140,7 @@ h1 {
 	} 
 
 	.column-half-contact-right {
-		width: auto;
+		width: 400px;
 		padding: 10px 0px;
 		margin: 0;
 		
