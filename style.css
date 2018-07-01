@@ -229,7 +229,7 @@ padding-bottom: 5px;
 
 @media (max-width: 400px) {
 	.header-portfolio {
-		height: 60px;
+		height: 90px;
 		margin-bottom: 5px;
 	}
 }
@@ -276,7 +276,7 @@ padding-bottom: 5px;
 
 @media (max-width: 400px) {
 	.header-about {
-		height: 60px;
+		height: 90px;
 		margin-bottom: 5px;
 	}
 }
@@ -322,7 +322,7 @@ padding-bottom: 5px;
 
 @media (max-width: 400px) {
 	.header-gallery {
-		height: 60px;
+		height: 90px;
 		margin-bottom: 5px;
 	}
 }
@@ -367,7 +367,7 @@ padding-bottom: 5px;
 
 @media (max-width: 400px) {
 	.header-contact {
-		height: 60px;
+		height: 90px;
 		margin-bottom: 5px;
 	}
 }
@@ -1124,9 +1124,16 @@ h1 {
 
 @media (max-width: 600px) {
 
+
+	.column-half-contact-left {
+		padding: 0;
+	} 
+
 	.column-half-contact-right {
-		width: ;
-		padding: 10px 20px;
+		width: auto;
+		padding: 10px 0px;
+		margin: 0;
+		
 	}
 	.column-half-contact-right h4 {
 		font-size: 10px;
