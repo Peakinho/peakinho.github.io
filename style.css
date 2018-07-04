@@ -1159,4 +1159,16 @@ h1 {
       .column-half-contact-right {
       	width: 300px;
       }
+
+      .column-half-contact-left {
+      	margin: 10px 0px;
+      }
+
+      .container-contact {
+      	padding: 10px;
+      }
+
+      .row-contact {
+      	width: auto;
+      }
 }
