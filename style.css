@@ -1016,6 +1016,10 @@ h1 {
 		
 	}
 
+	.container-about img {
+		margin: 20px;
+	}
+
 	.mobile-about {
 		width: auto;
 	}
